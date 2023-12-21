@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    <title>Indian Sweets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        .navbar-logo {
+            font-size: 25px;
+            font-family: 'Sriracha', cursive;
+            color: #000;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .navbar-menu a {
+            text-decoration: none;
+            color: #000;
+            padding: 15px 20px;
+        }
+
+        .navbar-menu a:hover {
+            background-color: #e0e0e0;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-image: url("[1](^1^)");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-text {
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner-text h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .banner-text p {
+            font-size: 20px;
+        }
+
+        .banner-text button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .banner-text button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .products {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px; 
+            padding: 40px; 
+        }
+
+        .product-card {
+            display:flex; 
+            flex-direction: column; 
+            justify-content:center; 
+            align-items:center; 
+        }
+
+        .product-card img {
+           width :300px; 
+           height :200px; 
+           object-fit :cover; 
+           border-radius :10px; 
+           margin-bottom :10px; 
+       }
+
+       .product-card h3 {
+           font-size :25px; 
+           color :#333333; 
+           margin-bottom :10px; 
+       }
+
+       .product-card p {
+           font-size :15px; 
+           color :#585858; 
+           margin-bottom :10px; 
+       }
+
+       .product-card button {
+           padding :10px 15px; 
+           border :none; 
+           border-radius :5px; 
+           background-color :#52caee; 
+           color :#000; 
+           font-size :15px; 
+           font-weight :bold; 
+           cursor :pointer; 
+       }
+
+       .product-card button:hover {
+          background-color :#5edaf0;  
+       }
+       
+       @media screen and (max-width :768px) { /* Responsive design for smaller screens */
+          .navbar-menu { /* Hide the navbar menu */
+              display:none;  
+          }
+          .banner-text h1 { /* Reduce the banner text size */
+              font-size :40px;  
+          }
+          .products { /* Change the grid layout to one column */
+              grid-template-columns :repeat(1, 1fr);  
+          }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+     
+         <div class="products">
+             <div class="product-card">
+                
+                 <h3>Gulab Jamun</h3>
+                 <p>Soft and spongy balls of fried dough soaked in sugar syrup</p>
+                 <button>Add to Cart</button>
+             </div>
+             <div class="product-card">
+                 
+                 <h3>Jalebi</h3>
+                 <p>Crispy and coiled fried batter dipped in saffron sugar syrup</p>
+                 <button>Add to Cart</button>
+             </div>
+             <div class="product-card">
+                 
+                 <h3>Rasgulla</h3>
+                 <p>Soft and juicy balls of cottage cheese cooked in light sugar syrup</p>
+                 <button>Add to Cart</button>
+             </div>
+         </div>
+    </div>
+</body>
+</html>
