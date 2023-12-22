@@ -327,13 +327,33 @@
     line-height: 1.5;
   }
 
+  .containerone {
+    display: flex; /* use flexbox layout */
+    justify-content: space-between; /* create equal space between the boxes */
+    width: 1200px; /* set the container width */
+    margin: 0 auto; /* center the container */
+    margin-top: 10px;
+  }
+
+  .box1, .box2, .box3 {
+    width: 420px; /* set the box width */
+    height: 200px; /* set the box height */
+    border: 1px solid black; /* add a border to the boxes */
+    margin-right: 3px;
+    justify-content: center;
+    text-align: center;
+  }
+
+
     </style>
 </head>
 <body>
+
+
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Digital SEO platform</a>
+            <a class="navbar-brand" href="#">Digital Marketing platform</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -359,6 +379,7 @@
             </div>
         </div>
     </section>
+
     <!-- Services -->
     <!-- <section id="services" class="services">
         <div class="container">
@@ -376,6 +397,12 @@
             </div>
         </div> 
     </section>    -->
+
+    <div class="containerone">
+        <div class="box1"><h3>SEO keyword</h3> <p>Conducting keyword research to find the best terms to target for your website and content</p></div>
+        <div class="box2"><h3>SEO Marketing</h3><p>Building and earning links from other relevant and authoritative websites to boost your domain authority and rankings.</p></div>
+        <div class="box3"><h3>SEO Analysis</h3><p>Analyzing and measuring your SEO results using tools like Google Analytics, Google Search Console, and Bing Webmaster Tools.</p></div>
+      </div>
     <div class="digital-marketing">
         <h3>What is digital marketing?</h3>
         <p>Digital marketing is a form of marketing that uses the internet and digital technologies to connect with potential customers. It involves various strategies and channels, such as search engine optimization, social media marketing, email marketing, web design, and online advertising. Digital marketing helps businesses reach and engage their target audience, increase brand awareness, generate leads, and drive sales. Digital marketing is also data-driven, meaning marketers can measure and optimize their campaigns based on real-time feedback and analytics.</p>
